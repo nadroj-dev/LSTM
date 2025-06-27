@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "871252520627",
+    "firebase_url": "https://lstm-d75ee-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lstm-d75ee",
+    "storage_bucket": "lstm-d75ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871252520627:android:19efcb8c8798906e7fcac6",
+        "android_client_info": {
+          "package_name": "com.otis.lstm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcMUTV5GeIBpB4Fkd6DEWoDDX1QTGBUvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
