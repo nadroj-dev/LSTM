@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".ProfileDetailsActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT PROFILE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Edit Profile Picture Button -->
+    <Button
+        android:id="@+id/editProfilePictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile Picture"
+        android:drawableStart="@android:drawable/ic_menu_edit"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/profileImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+    <!-- Full Name Section -->
+    <ImageView
+        android:id="@+id/nameIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toBottomOf="@id/editProfilePictureButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/nameIcon"
+        app:layout_constraintStart_toEndOf="@id/nameIcon"
+        app:layout_constraintEnd_toStartOf="@id/editNameIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editNameIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/nameIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Contact Number Section -->
+    <ImageView
+        android:id="@+id/contactIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_call"
+        app:layout_constraintTop_toBottomOf="@id/nameIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/contactTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Number"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/contactIcon"
+        app:layout_constraintStart_toEndOf="@id/contactIcon"
+        app:layout_constraintEnd_toStartOf="@id/editContactIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editContactIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/contactIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Email Section -->
+    <ImageView
+        android:id="@+id/emailIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_send"
+        app:layout_constraintTop_toBottomOf="@id/contactIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/emailIcon"
+        app:layout_constraintStart_toEndOf="@id/emailIcon"
+        app:layout_constraintEnd_toStartOf="@id/editEmailIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editEmailIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/emailIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Password Section -->
+    <ImageView
+        android:id="@+id/passwordIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_lock_power_off"
+        app:layout_constraintTop_toBottomOf="@id/emailIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="••••••••••••"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/passwordIcon"
+        app:layout_constraintStart_toEndOf="@id/passwordIcon"
+        app:layout_constraintEnd_toStartOf="@id/editPasswordIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editPasswordIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/passwordIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Address Section -->
+    <ImageView
+        android:id="@+id/addressIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_myplaces"
+        app:layout_constraintTop_toBottomOf="@id/passwordIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/addressIcon"
+        app:layout_constraintStart_toEndOf="@id/addressIcon"
+        app:layout_constraintEnd_toStartOf="@id/editAddressIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editAddressIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/addressIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Birthdate Section -->
+    <ImageView
+        android:id="@+id/birthdateIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_my_calendar"
+        app:layout_constraintTop_toBottomOf="@id/addressIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/birthdateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Birthdate"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/birthdateIcon"
+        app:layout_constraintStart_toEndOf="@id/birthdateIcon"
+        app:layout_constraintEnd_toStartOf="@id/editBirthdateIcon"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/editBirthdateIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toTopOf="@id/birthdateIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
